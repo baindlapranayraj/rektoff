@@ -1,5 +1,14 @@
 # Rektoff Lesson One: Rust Fundamentals & Memory Management
 
+- **Core programming philosophy established**: Rust provides memory safety guarantees through compile-time analysis while maintaining low-level control comparable to C
+    - Memory safety implemented via **ownership, borrowing, and lifetime systems** analyzed during MIR (Middle Intermediate Representation) phase
+    - **Borrow checker** validates all ownership and borrowing rules before binary generation
+    - Programs rejected if memory safety cannot be guaranteed, preventing undefined behavior at runtime
+- **Memory layout architecture defined**: Process memory organized into distinct regions with specific allocation rules
+    - **Stack memory**: Fixed-size data with LIFO (Last In, First Out) frame management for function scopes
+    - **Heap memory**: Dynamic-size data requiring global allocator interaction with kernel for memory requests
+    - **Static memory**: Program-lifetime data stored in data segment and BSS (Block Started by Symbol) sections
+
 ## 1. Virtual Memory and Addressing
 On 64-bit systems, addresses are 64 bits wide, but only the lower 48 bits are used for actual memory mapping (256 TiB addressable space); the upper 16 bits must be all 0s or all 1s for canonical addresses.
 
@@ -54,5 +63,56 @@ On systems with limited RAM (e.g., Mac M1 with 8 GB), opening many apps or brows
 
 The 48-bit virtual address limit is a practical compromise between hardware complexity and the vast address space most applications need today.
 
+## Compilation Process & Analysis
+
+- **Multi-stage compilation pipeline**: Source code transforms through multiple representations with safety analysis at each stage
+    - **Abstract Syntax Tree → Higher Intermediate Representation → MIR → Binary** compilation flow
+    - **Type inference and trait resolution** performed during higher representation phase
+    - **Memory safety analysis** conducted exclusively during MIR phase before code generation
+- **Macro expansion system**: Compile-time code generation distinct from runtime function calls
+    - **Macro rules** expand to additional Rust source code before compilation begins
+    - **Format macros** handled as **compiler built-ins** for architecture-specific implementations
+    - **Cargo expand** tool available for investigating macro expansions
+
+## Memory Allocation Strategies
+
+- **Stack allocation rules**: Automatic memory management with scope-based deallocation
+    - All local variables allocated to **stack frames** with deterministic sizes
+    - **Frame popping** occurs when functions complete, automatically deallocating local data
+    - **Return value slots** reserved at frame creation even for unit-returning functions
+- **Heap allocation requirements**: Dynamic data requires explicit allocation requests
+    - **Box** and **Vec** types utilize **global allocator trait** for kernel memory requests
+    - **Unique pointers** guaranteed non-null with exclusive access to prevent data races
+    - **Capacity vs length tracking** enables efficient vector growth without constant reallocation
+
+## Static vs Constant Data Management
+
+- **Constant evaluation**: Compile-time computation with inline replacement
+    - **Constants** evaluated during **rustc_const_eval** phase using **MIR interpreter**
+    - **Syntactic replacement** occurs throughout program, inlining computed values
+    - **Mirror interpreter** provides separate execution environment for constant evaluation
+- **Static memory allocation**: Program-lifetime data with memory addresses
+    - **String literals** stored in **read-only data section** accessible program-wide
+    - **Mutable statics** allocated to **writable data section** for runtime modification
+    - **Zero-initialized arrays** stored in **BSS section** to minimize binary size
+
+## Binary Analysis & Debugging Tools
+
+- **Binary inspection capabilities**: Multiple tools available for examining compiled output
+    - **readelf** command provides section analysis including **size, type, and flags**
+    - **objdump -s -j** enables raw binary section content examination
+    - **cargo expand** reveals macro expansions for understanding code generation
+- **Development environment setup**: IDE debugging features for memory visualization
+    - **Rust Rover IDE** provides **memory view debugging** with heap allocation tracking
+    - **Stack frame visualization** available through debugger stepping functionality
+    - **Global allocator** operations observable during debugging sessions
+
+## Virtual Memory & Process Management
+
+- **Virtual memory abstraction**: Operating system provides process-isolated memory spaces
+    - **Memory Management Unit (MMU)** handles **virtual-to-physical address translation**
+    - **Process pages** appear as **contiguous memory blocks** despite physical fragmentation
+    - **Virtual addresses** exceed physical memory capacity through **page table management**
+
 ## In summary:
-You now understand how modern operating systems and CPUs manage memory using virtual addresses, how stack and heap work, how system calls like brk/sbrk/mmap expand the heap, how Rust and ELF binaries fit into this model, and how tools can help you explore these concepts in practice
+You now understand how modern operating systems and CPUs manage memory using virtual addresses, how stack and heap work, how system calls like brk/sbrk/mmap expand the heap, how Rust and ELF binaries fit into this model, and how tools can help you explore these concepts in practice.
