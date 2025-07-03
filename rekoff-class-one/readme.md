@@ -116,3 +116,7 @@ The 48-bit virtual address limit is a practical compromise between hardware comp
 
 ## In summary:
 You now understand how modern operating systems and CPUs manage memory using virtual addresses, how stack and heap work, how system calls like brk/sbrk/mmap expand the heap, how Rust and ELF binaries fit into this model, and how tools can help you explore these concepts in practice.
+
+
+## Some Resources: 
+[Computerphile video on Virtual Memory](https://youtu.be/5lFnKYCZT5o?si=RsmHGUWzVL4EPewp)
