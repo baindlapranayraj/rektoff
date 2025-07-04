@@ -119,4 +119,5 @@ You now understand how modern operating systems and CPUs manage memory using vir
 
 
 ## Some Resources: 
-[Computerphile video on Virtual Memory](https://youtu.be/5lFnKYCZT5o?si=RsmHGUWzVL4EPewp)
+[Computerphile video on Virtual Memory](https://youtu.be/5lFnKYCZT5o?si=RsmHGUWzVL4EPewp) <br/>
+[Nice Animated video to visualize the Virtual Memory](https://youtu.be/ultz9m0n0GE?si=XgdYxsPZpXkc1PCh)
