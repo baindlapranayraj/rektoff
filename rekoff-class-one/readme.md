@@ -14,7 +14,7 @@ On 64-bit systems, addresses are 64 bits wide, but only the lower 48 bits are us
 
 Virtual addresses are the addresses your program uses—they are mapped to physical RAM addresses by the operating system and CPU’s Memory Management Unit (MMU).
 
-<img src = "./images/virtula_memory.png"/>
+![Virtual Memory](./images/virtula_memory.png)
 
 When you print or manipulate pointer addresses in code (e.g., C, C++, Rust), you’re working with virtual addresses, not physical hardware addresses.
 
@@ -32,7 +32,7 @@ These system calls adjust the program break (end of the heap segment) or map new
 
 The allocator splits and tracks these chunks for efficient reuse; freed memory may not be immediately returned to the OS.
 
-<img src = "./images/memory_segement.png"/>
+![Memory Segments](./images/memory_segement.png)
 
 ## 4. ELF Binaries and Program Execution
 Compiling Rust (or C/C++) code produces an ELF (Executable and Linkable Format) binary on Linux.
@@ -118,7 +118,7 @@ The 48-bit virtual address limit is a practical compromise between hardware comp
 You now understand how modern operating systems and CPUs manage memory using virtual addresses, how stack and heap work, how system calls like brk/sbrk/mmap expand the heap, how Rust and ELF binaries fit into this model, and how tools can help you explore these concepts in practice.
 
 
-## Some Resources: 
+## Some Resources:
 [Computerphile video on Virtual Memory](https://youtu.be/5lFnKYCZT5o?si=RsmHGUWzVL4EPewp) <br/>
 [Nice Animated video to visualize the Virtual Memory](https://youtu.be/ultz9m0n0GE?si=XgdYxsPZpXkc1PCh)<br/>
 [Very Nice Conversation in Stack Overflow](https://stackoverflow.com/questions/22290347/understanding-virtual-address-virtual-memory-and-paging)

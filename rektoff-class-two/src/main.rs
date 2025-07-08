@@ -1,6 +1,8 @@
 use std::ptr::NonNull;
 
-use crate::{buffer_overflow::buffer_overflow, dangling::dangling_attack};
+use dangling::dangling_attack;
+
+use crate::buffer_overflow::buffer_overflow;
 
 pub mod buffer_overflow;
 pub mod dangling;
@@ -9,19 +11,18 @@ fn main() {
     let data = Box::new(42);
     let raw_ptr = NonNull::new(Box::into_raw(data)).unwrap();
 
-    println!(
-        "Printing the raw pointer value before dropping {:?}",
-        raw_ptr
-    );
+    // println!(
+    //     "Printing the raw pointer value before dropping {:?}",
+    //     raw_ptr
+    // );
 
     unsafe {
         drop(Box::from_raw(raw_ptr.as_ptr())); // Frees memory
-        // dangling_attack();
-        // println!(
-        //     "The grabage value of the deallocated memory {:?}",
-        //     *raw_ptr.as_ptr()
-        // );
-
+        dangling_attack();
+        println!(
+            "The grabage value of the deallocated memory {:?}",
+            *raw_ptr.as_ptr()
+        );
 
         buffer_overflow();
     }
