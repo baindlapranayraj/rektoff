@@ -1,3 +1,12 @@
 # Rektoff: Rust Security Bootcamp
 
-<img src="./images/rektoff .png"  />
+
+
+<div align=center>
+    <img 
+    src="./images/rektoff-bootcamp.jpeg" alt="Rectoff logo" 
+    height = 300
+    width = 500
+    />
+    
+ </div>
