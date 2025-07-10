@@ -1,10 +1,11 @@
 use dangling::dangling_attack;
 use practical::overflow_attack;
 
-use crate::buffer_overflow::buffer_overflow;
+use crate::{ buffer_overflow::buffer_overflow, data_race::data_race };
 pub mod buffer_overflow;
 pub mod dangling;
 pub mod practical;
+pub mod data_race;
 
 fn main() {
     unsafe {
@@ -14,6 +15,8 @@ fn main() {
 
         // Practical example for buffer overflow
         overflow_attack::attack();
+
+        data_race();
     }
 }
 

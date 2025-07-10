@@ -30,6 +30,9 @@
 // |  (unallocated)       |
 // +----------------------+
 // |  (Heap continues...)  |
+//
+//
+// Did u notice the vriable i(at for loop) is not stored in stack.
 
 pub fn buffer_overflow() {
     let mut buffer = [0u8; 5]; // Stack-allocated buffer (4 bytes)
@@ -44,7 +47,8 @@ pub fn buffer_overflow() {
         let ptr = buffer.as_mut_ptr(); // Raw mutable pointer to start of buffer
 
         // 🚨 Undefined Behavior (UB):
-        for i in 0..15 {  
+        for i in 0..15 {
+            // Varaiable i is hot variable, meaning it is read/write many times.
             // Looping beyond the allocated buffer size
             *ptr.add(i) = i as u8; // Writing to the pointer, potentially causing UB
 
@@ -55,6 +59,8 @@ pub fn buffer_overflow() {
                 ptr.add(i)   // Pointer virtual address for the current index
             );
         }
+
+        // the variable i only exists in a register, it has no memory address. If it has no memory address, you cannot create a pointer to it, and your buffer overflow cannot overwrite it.
     }
 
     println!("buffer: {:?}", buffer); // Expected: [0, 1, 2, 3] (but may vary due to UB)
@@ -67,14 +73,11 @@ pub fn buffer_overflow() {
         "The binary data of the not in buffer is {:0b}",
         not_in_buffer
     );
-    // 11011101 11010101
-    // 1 After loop : 1101000000100
-    // 2 After loop:  10100000100
 }
 
 // - Pointer Arithmetic: When you use ptr.add(i), you're performing pointer arithmetic.
 //    This means you're moving the pointer i bytes forward from the start of the buffer.
-
+//
 // - Out-of-Bounds Access: The loop iterates from 0 to 4, which means you're trying to access memory locations beyond the allocated buffer:
 // 	- For i = 0, *ptr.add(0) accesses buffer[0], which is 0.
 // 	- For i = 1, *ptr.add(1) accesses buffer[1], which is 0.
@@ -90,10 +93,10 @@ pub fn buffer_overflow() {
 //
 // - To move the count element forward, we calculate:
 //    `new_address = old_address + count * size_of::<T>()`
-
+//
 // - The CPU doesn’t know if you’re out of bounds. It just does the math.So if u go out
 //   the bounds of memory then program will do Undefined behaviour.
-
+//
 // If you move the pointer outside the memory you own (the allocated object), you might:
 // - Read or write garbage data
 // - Crash the program
@@ -104,4 +107,4 @@ pub fn buffer_overflow() {
 //    - This means "move forward by one u32 element".
 //    - The size of one u32 is 4 bytes.
 //    - The new address is 1000 + (1 * 4) = 1004.
-//  
+//
