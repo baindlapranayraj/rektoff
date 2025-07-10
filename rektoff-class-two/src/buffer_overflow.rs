@@ -36,17 +36,15 @@ pub fn buffer_overflow() {
     let not_in_buffer = 56789; // Stack variable just after the buffer - 4 bytes
 
     println!(
-        "The binary data of the not in buffer is {:0b}",
-        not_in_buffer
+        "The binary data of the not in buffer is {:0b} and the data is {} and its address is {:p}",
+        not_in_buffer, not_in_buffer, &not_in_buffer
     );
-
-    println!("The stack address of no in buffer is {:p}", &not_in_buffer);
 
     unsafe {
         let ptr = buffer.as_mut_ptr(); // Raw mutable pointer to start of buffer
 
         // 🚨 Undefined Behavior (UB):
-        for i in 0..10 {
+        for i in 0..15 {  
             // Looping beyond the allocated buffer size
             *ptr.add(i) = i as u8; // Writing to the pointer, potentially causing UB
 
@@ -61,9 +59,9 @@ pub fn buffer_overflow() {
 
     println!("buffer: {:?}", buffer); // Expected: [0, 1, 2, 3] (but may vary due to UB)
     println!("not_in_buffer: {}", not_in_buffer); // Will this still be 6789?
-                                                  // The pointer arithmetic allows access to memory beyond the buffer array,
-                                                  // which can lead to overwriting the not_in_buffer variable.
-                                                  // An attacker could exploit this to input malicious data and mutate sensitive data.
+    // The pointer arithmetic allows access to memory beyond the buffer array,
+    // which can lead to overwriting the not_in_buffer variable.
+    // An attacker could exploit this to input malicious data and mutate sensitive data.
 
     println!(
         "The binary data of the not in buffer is {:0b}",
@@ -89,3 +87,21 @@ pub fn buffer_overflow() {
 //  - The actual memory layout can vary based on the compiler, architecture, and optimizations.
 //     If there is padding or if the stack layout changes, the memory locations you are writing to may
 //     not directly correspond to the bytes of not_in_buffer as you expect.
+//
+// - To move the count element forward, we calculate:
+//    `new_address = old_address + count * size_of::<T>()`
+
+// - The CPU doesn’t know if you’re out of bounds. It just does the math.So if u go out
+//   the bounds of memory then program will do Undefined behaviour.
+
+// If you move the pointer outside the memory you own (the allocated object), you might:
+// - Read or write garbage data
+// - Crash the program
+// - Corrupt other data (like the example in overflow_attack.rs)
+//
+// When we do addition arthmetic operation, it increases the pointer's address by count * size_of::<T>() bytes.
+//  ptr.add(1): lets say T is type of u32
+//    - This means "move forward by one u32 element".
+//    - The size of one u32 is 4 bytes.
+//    - The new address is 1000 + (1 * 4) = 1004.
+//  
