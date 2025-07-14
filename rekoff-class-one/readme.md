@@ -114,6 +114,14 @@ The 48-bit virtual address limit is a practical compromise between hardware comp
     - **Process pages** appear as **contiguous memory blocks** despite physical fragmentation
     - **Virtual addresses** exceed physical memory capacity through **page table management**
 
+
+## Some Commands: 
+```
+objdump -s -j __const target_binary    # for read-only data
+objdump -s -j __data target_binary     # for initialized data  
+objdump -s -j __bss target_binary      # for uninitialized data
+```
+
 ## In summary:
 You now understand how modern operating systems and CPUs manage memory using virtual addresses, how stack and heap work, how system calls like brk/sbrk/mmap expand the heap, how Rust and ELF binaries fit into this model, and how tools can help you explore these concepts in practice.
 

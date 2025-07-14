@@ -15,6 +15,7 @@ pub fn data_race() {
                     // 🚨 DATA RACE HAPPENS HERE 🚨
                     COUNTER += 1;
                 }
+                thread::sleep(Duration::from_millis(1000));
             }
         });
         handles.push(handle);
@@ -28,6 +29,6 @@ pub fn data_race() {
     // If everything worked perfectly, the final count should be 1,000,000.
     // But it won't be.
     unsafe {
-        // println!("Final COUNTER value: {}", COUNTER);
+        //println!("Final COUNTER value: {}", COUNTER);
     }
 }

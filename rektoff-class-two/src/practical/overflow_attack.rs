@@ -12,7 +12,6 @@ pub fn attack() {
 
     println!("------- Buffer Oveflow Attack -------");
     // "12345123" fills the buffer. The final "3" will spill over.
-    // The ASCII value of '3' is 51. A non-zero value for a bool is `true`.
     let malicious_data = b"12345123";
 
     let ptr = user.as_mut_ptr();
