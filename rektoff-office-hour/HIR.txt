@@ -1,0 +1,918 @@
+                                                                                                                                        "Say my name:\n",
+                                                                                                                                        Cooked,
+                                                                                                                                    ),
+                                                                                                                                    span: src/main.rs:4:14: 4:28 (#0),
+                                                                                                                                },
+                                                                                                                            ),
+                                                                                                                            span: src/main.rs:4:14: 4:28 (#0),
+                                                                                                                        },
+                                                                                                                    ],
+                                                                                                                ),
+                                                                                                                span: src/main.rs:4:14: 4:28 (#0),
+                                                                                                            },
+                                                                                                        ),
+                                                                                                        span: src/main.rs:4:14: 4:28 (#0),
+                                                                                                    },
+                                                                                                ],
+                                                                                            ),
+                                                                                            span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:28: 143:61 (#5),
+                                                                                        },
+                                                                                    ],
+                                                                                ),
+                                                                                span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:9: 143:62 (#4),
+                                                                            },
+                                                                        ),
+                                                                        span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:9: 143:63 (#4),
+                                                                    },
+                                                                ],
+                                                                expr: None,
+                                                                hir_id: HirId(DefId(0:3 ~ main[0172]::main).12),
+                                                                rules: DefaultBlock,
+                                                                span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:142:23: 144:6 (#4),
+                                                                targeted_by_break: false,
+                                                            },
+                                                            None,
+                                                        ),
+                                                        span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:142:23: 144:6 (#4),
+                                                    },
+                                                ),
+                                                span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:142:23: 144:6 (#4),
+                                            },
+                                            Stmt {
+                                                hir_id: HirId(DefId(0:3 ~ main[0172]::main).55),
+                                                kind: Semi(
+                                                    Expr {
+                                                        hir_id: HirId(DefId(0:3 ~ main[0172]::main).28),
+                                                        kind: Block(
+                                                            Block {
+                                                                stmts: [
+                                                                    Stmt {
+                                                                        hir_id: HirId(DefId(0:3 ~ main[0172]::main).54),
+                                                                        kind: Semi(
+                                                                            Expr {
+                                                                                hir_id: HirId(DefId(0:3 ~ main[0172]::main).30),
+                                                                                kind: Call(
+                                                                                    Expr {
+                                                                                        hir_id: HirId(DefId(0:3 ~ main[0172]::main).31),
+                                                                                        kind: Path(
+                                                                                            Resolved(
+                                                                                                None,
+                                                                                                Path {
+                                                                                                    span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:9: 143:27 (#6),
+                                                                                                    res: Def(
+                                                                                                        Fn,
+                                                                                                        DefId(1:3773 ~ std[6ddd]::io::stdio::_print),
+                                                                                                    ),
+                                                                                                    segments: [
+                                                                                                        PathSegment {
+                                                                                                            ident: $crate#6,
+                                                                                                            hir_id: HirId(DefId(0:3 ~ main[0172]::main).32),
+                                                                                                            res: Def(
+                                                                                                                Mod,
+                                                                                                                DefId(1:0 ~ std[6ddd]),
+                                                                                                            ),
+                                                                                                            args: None,
+                                                                                                            infer_args: true,
+                                                                                                        },
+                                                                                                        PathSegment {
+                                                                                                            ident: io#6,
+                                                                                                            hir_id: HirId(DefId(0:3 ~ main[0172]::main).33),
+                                                                                                            res: Def(
+                                                                                                                Mod,
+                                                                                                                DefId(1:2703 ~ std[6ddd]::io),
+                                                                                                            ),
+                                                                                                            args: None,
+                                                                                                            infer_args: true,
+                                                                                                        },
+                                                                                                        PathSegment {
+                                                                                                            ident: _print#6,
+                                                                                                            hir_id: HirId(DefId(0:3 ~ main[0172]::main).34),
+                                                                                                            res: Def(
+                                                                                                                Fn,
+                                                                                                                DefId(1:3773 ~ std[6ddd]::io::stdio::_print),
+                                                                                                            ),
+                                                                                                            args: None,
+                                                                                                            infer_args: true,
+                                                                                                        },
+                                                                                                    ],
+                                                                                                },
+                                                                                            ),
+                                                                                        ),
+                                                                                        span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:9: 143:27 (#6),
+                                                                                    },
+                                                                                    [
+                                                                                        Expr {
+                                                                                            hir_id: HirId(DefId(0:3 ~ main[0172]::main).35),
+                                                                                            kind: Call(
+                                                                                                Expr {
+                                                                                                    hir_id: HirId(DefId(0:3 ~ main[0172]::main).53),
+                                                                                                    kind: Path(
+                                                                                                        TypeRelative(
+                                                                                                            Ty {
+                                                                                                                hir_id: HirId(DefId(0:3 ~ main[0172]::main).51),
+                                                                                                                span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:28: 143:61 (#7),
+                                                                                                                kind: Path(
+                                                                                                                    Resolved(
+                                                                                                                        None,
+                                                                                                                        Path {
+                                                                                                                            span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:28: 143:61 (#7),
+                                                                                                                            res: Def(
+                                                                                                                                Struct,
+                                                                                                                                DefId(2:41020 ~ core[6c56]::fmt::Arguments),
+                                                                                                                            ),
+                                                                                                                            segments: [
+                                                                                                                                PathSegment {
+                                                                                                                                    ident: format_arguments#7,
+                                                                                                                                    hir_id: HirId(DefId(0:3 ~ main[0172]::main).50),
+                                                                                                                                    res: Def(
+                                                                                                                                        Struct,
+                                                                                                                                        DefId(2:41020 ~ core[6c56]::fmt::Arguments),
+                                                                                                                                    ),
+                                                                                                                                    args: None,
+                                                                                                                                    infer_args: true,
+                                                                                                                                },
+                                                                                                                            ],
+                                                                                                                        },
+                                                                                                                    ),
+                                                                                                                ),
+                                                                                                            },
+                                                                                                            PathSegment {
+                                                                                                                ident: new_v1#7,
+                                                                                                                hir_id: HirId(DefId(0:3 ~ main[0172]::main).52),
+                                                                                                                res: Err,
+                                                                                                                args: None,
+                                                                                                                infer_args: true,
+                                                                                                            },
+                                                                                                        ),
+                                                                                                    ),
+                                                                                                    span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:28: 143:61 (#7),
+                                                                                                },
+                                                                                                [
+                                                                                                    Expr {
+                                                                                                        hir_id: HirId(DefId(0:3 ~ main[0172]::main).39),
+                                                                                                        kind: AddrOf(
+                                                                                                            Ref,
+                                                                                                            Not,
+                                                                                                            Expr {
+                                                                                                                hir_id: HirId(DefId(0:3 ~ main[0172]::main).38),
+                                                                                                                kind: Array(
+                                                                                                                    [
+                                                                                                                        Expr {
+                                                                                                                            hir_id: HirId(DefId(0:3 ~ main[0172]::main).36),
+                                                                                                                            kind: Lit(
+                                                                                                                                Spanned {
+                                                                                                                                    node: Str(
+                                                                                                                                        "",
+                                                                                                                                        Cooked,
+                                                                                                                                    ),
+                                                                                                                                    span: src/main.rs:5:14: 5:18 (#0),
+                                                                                                                                },
+                                                                                                                            ),
+                                                                                                                            span: src/main.rs:5:14: 5:18 (#0),
+                                                                                                                        },
+                                                                                                                        Expr {
+                                                                                                                            hir_id: HirId(DefId(0:3 ~ main[0172]::main).37),
+                                                                                                                            kind: Lit(
+                                                                                                                                Spanned {
+                                                                                                                                    node: Str(
+                                                                                                                                        "\n",
+                                                                                                                                        Cooked,
+                                                                                                                                    ),
+                                                                                                                                    span: src/main.rs:5:14: 5:18 (#0),
+                                                                                                                                },
+                                                                                                                            ),
+                                                                                                                            span: src/main.rs:5:14: 5:18 (#0),
+                                                                                                                        },
+                                                                                                                    ],
+                                                                                                                ),
+                                                                                                                span: src/main.rs:5:14: 5:18 (#0),
+                                                                                                            },
+                                                                                                        ),
+                                                                                                        span: src/main.rs:5:14: 5:18 (#0),
+                                                                                                    },
+                                                                                                    Expr {
+                                                                                                        hir_id: HirId(DefId(0:3 ~ main[0172]::main).49),
+                                                                                                        kind: AddrOf(
+                                                                                                            Ref,
+                                                                                                            Not,
+                                                                                                            Expr {
+                                                                                                                hir_id: HirId(DefId(0:3 ~ main[0172]::main).48),
+                                                                                                                kind: Array(
+                                                                                                                    [
+                                                                                                                        Expr {
+                                                                                                                            hir_id: HirId(DefId(0:3 ~ main[0172]::main).47),
+                                                                                                                            kind: Call(
+                                                                                                                                Expr {
+                                                                                                                                    hir_id: HirId(DefId(0:3 ~ main[0172]::main).46),
+                                                                                                                                    kind: Path(
+                                                                                                                                        TypeRelative(
+                                                                                                                                            Ty {
+                                                                                                                                                hir_id: HirId(DefId(0:3 ~ main[0172]::main).44),
+                                                                                                                                                span: src/main.rs:5:15: 5:17 (#7),
+                                                                                                                                                kind: Path(
+                                                                                                                                                    Resolved(
+                                                                                                                                                        None,
+                                                                                                                                                        Path {
+                                                                                                                                                            span: src/main.rs:5:15: 5:17 (#7),
+                                                                                                                                                            res: Def(
+                                                                                                                                                                Struct,
+                                                                                                                                                                DefId(2:40929 ~ core[6c56]::fmt::rt::Argument),
+                                                                                                                                                            ),
+                                                                                                                                                            segments: [
+                                                                                                                                                                PathSegment {
+                                                                                                                                                                    ident: format_argument#7,
+                                                                                                                                                                    hir_id: HirId(DefId(0:3 ~ main[0172]::main).43),
+                                                                                                                                                                    res: Def(
+                                                                                                                                                                        Struct,
+                                                                                                                                                                        DefId(2:40929 ~ core[6c56]::fmt::rt::Argument),
+                                                                                                                                                                    ),
+                                                                                                                                                                    args: None,
+                                                                                                                                                                    infer_args: true,
+                                                                                                                                                                },
+                                                                                                                                                            ],
+                                                                                                                                                        },
+                                                                                                                                                    ),
+                                                                                                                                                ),
+                                                                                                                                            },
+                                                                                                                                            PathSegment {
+                                                                                                                                                ident: new_display#7,
+                                                                                                                                                hir_id: HirId(DefId(0:3 ~ main[0172]::main).45),
+                                                                                                                                                res: Err,
+                                                                                                                                                args: None,
+                                                                                                                                                infer_args: true,
+                                                                                                                                            },
+                                                                                                                                        ),
+                                                                                                                                    ),
+                                                                                                                                    span: src/main.rs:5:15: 5:17 (#7),
+                                                                                                                                },
+                                                                                                                                [
+                                                                                                                                    Expr {
+                                                                                                                                        hir_id: HirId(DefId(0:3 ~ main[0172]::main).42),
+                                                                                                                                        kind: AddrOf(
+                                                                                                                                            Ref,
+                                                                                                                                            Not,
+                                                                                                                                            Expr {
+                                                                                                                                                hir_id: HirId(DefId(0:3 ~ main[0172]::main).40),
+                                                                                                                                                kind: Path(
+                                                                                                                                                    Resolved(
+                                                                                                                                                        None,
+                                                                                                                                                        Path {
+                                                                                                                                                            span: src/main.rs:5:20: 5:24 (#0),
+                                                                                                                                                            res: Local(
+                                                                                                                                                                HirId(DefId(0:3 ~ main[0172]::main).10),
+                                                                                                                                                            ),
+                                                                                                                                                            segments: [
+                                                                                                                                                                PathSegment {
+                                                                                                                                                                    ident: some#0,
+                                                                                                                                                                    hir_id: HirId(DefId(0:3 ~ main[0172]::main).41),
+                                                                                                                                                                    res: Local(
+                                                                                                                                                                        HirId(DefId(0:3 ~ main[0172]::main).10),
+                                                                                                                                                                    ),
+                                                                                                                                                                    args: None,
+                                                                                                                                                                    infer_args: true,
+                                                                                                                                                                },
+                                                                                                                                                            ],
+                                                                                                                                                        },
+                                                                                                                                                    ),
+                                                                                                                                                ),
+                                                                                                                                                span: src/main.rs:5:20: 5:24 (#0),
+                                                                                                                                            },
+                                                                                                                                        ),
+                                                                                                                                        span: src/main.rs:5:20: 5:24 (#7),
+                                                                                                                                    },
+                                                                                                                                ],
+                                                                                                                            ),
+                                                                                                                            span: src/main.rs:5:15: 5:17 (#7),
+                                                                                                                        },
+                                                                                                                    ],
+                                                                                                                ),
+                                                                                                                span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:28: 143:61 (#7),
+                                                                                                            },
+                                                                                                        ),
+                                                                                                        span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:28: 143:61 (#7),
+                                                                                                    },
+                                                                                                ],
+                                                                                            ),
+                                                                                            span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:28: 143:61 (#7),
+                                                                                        },
+                                                                                    ],
+                                                                                ),
+                                                                                span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:9: 143:62 (#6),
+                                                                            },
+                                                                        ),
+                                                                        span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:9: 143:63 (#6),
+                                                                    },
+                                                                ],
+                                                                expr: None,
+                                                                hir_id: HirId(DefId(0:3 ~ main[0172]::main).29),
+                                                                rules: DefaultBlock,
+                                                                span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:142:23: 144:6 (#6),
+                                                                targeted_by_break: false,
+                                                            },
+                                                            None,
+                                                        ),
+                                                        span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:142:23: 144:6 (#6),
+                                                    },
+                                                ),
+                                                span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:142:23: 144:6 (#6),
+                                            },
+                                            Stmt {
+                                                hir_id: HirId(DefId(0:3 ~ main[0172]::main).62),
+                                                kind: Semi(
+                                                    Expr {
+                                                        hir_id: HirId(DefId(0:3 ~ main[0172]::main).56),
+                                                        kind: Call(
+                                                            Expr {
+                                                                hir_id: HirId(DefId(0:3 ~ main[0172]::main).57),
+                                                                kind: Path(
+                                                                    Resolved(
+                                                                        None,
+                                                                        Path {
+                                                                            span: src/main.rs:7:5: 7:14 (#0),
+                                                                            res: Def(
+                                                                                Fn,
+                                                                                DefId(0:4 ~ main[0172]::time_pass),
+                                                                            ),
+                                                                            segments: [
+                                                                                PathSegment {
+                                                                                    ident: time_pass#0,
+                                                                                    hir_id: HirId(DefId(0:3 ~ main[0172]::main).58),
+                                                                                    res: Def(
+                                                                                        Fn,
+                                                                                        DefId(0:4 ~ main[0172]::time_pass),
+                                                                                    ),
+                                                                                    args: None,
+                                                                                    infer_args: true,
+                                                                                },
+                                                                            ],
+                                                                        },
+                                                                    ),
+                                                                ),
+                                                                span: src/main.rs:7:5: 7:14 (#0),
+                                                            },
+                                                            [
+                                                                Expr {
+                                                                    hir_id: HirId(DefId(0:3 ~ main[0172]::main).59),
+                                                                    kind: AddrOf(
+                                                                        Ref,
+                                                                        Not,
+                                                                        Expr {
+                                                                            hir_id: HirId(DefId(0:3 ~ main[0172]::main).60),
+                                                                            kind: Path(
+                                                                                Resolved(
+                                                                                    None,
+                                                                                    Path {
+                                                                                        span: src/main.rs:7:16: 7:20 (#0),
+                                                                                        res: Local(
+                                                                                            HirId(DefId(0:3 ~ main[0172]::main).10),
+                                                                                        ),
+                                                                                        segments: [
+                                                                                            PathSegment {
+                                                                                                ident: some#0,
+                                                                                                hir_id: HirId(DefId(0:3 ~ main[0172]::main).61),
+                                                                                                res: Local(
+                                                                                                    HirId(DefId(0:3 ~ main[0172]::main).10),
+                                                                                                ),
+                                                                                                args: None,
+                                                                                                infer_args: true,
+                                                                                            },
+                                                                                        ],
+                                                                                    },
+                                                                                ),
+                                                                            ),
+                                                                            span: src/main.rs:7:16: 7:20 (#0),
+                                                                        },
+                                                                    ),
+                                                                    span: src/main.rs:7:15: 7:20 (#0),
+                                                                },
+                                                            ],
+                                                        ),
+                                                        span: src/main.rs:7:5: 7:21 (#0),
+                                                    },
+                                                ),
+                                                span: src/main.rs:7:5: 7:22 (#0),
+                                            },
+                                        ],
+                                        expr: None,
+                                        hir_id: HirId(DefId(0:3 ~ main[0172]::main).1),
+                                        rules: DefaultBlock,
+                                        span: src/main.rs:1:11: 8:2 (#0),
+                                        targeted_by_break: false,
+                                    },
+                                    None,
+                                ),
+                                span: src/main.rs:1:11: 8:2 (#0),
+                            },
+                        },
+                    },
+                    opt_hash_including_bodies: None,
+                },
+                parenting: UnordMap {
+                    inner: {},
+                },
+                attrs: AttributeMap {
+                    map: {},
+                    define_opaque: None,
+                    opt_hash: None,
+                },
+                trait_map: UnordMap {
+                    inner: {
+                        4: [
+                            TraitCandidate {
+                                def_id: DefId(2:3455 ~ core[6c56]::convert::From),
+                                import_ids: [],
+                            },
+                        ],
+                    },
+                },
+            },
+        ),
+        Owner(
+            OwnerInfo {
+                nodes: OwnerNodes {
+                    node: ParentedNode {
+                        parent: 4294967040,
+                        node: Item(
+                            Item {
+                                owner_id: DefId(0:4 ~ main[0172]::time_pass),
+                                kind: Fn {
+                                    ident: time_pass#0,
+                                    sig: FnSig {
+                                        header: FnHeader {
+                                            safety: Normal(
+                                                Safe,
+                                            ),
+                                            constness: NotConst,
+                                            asyncness: NotAsync,
+                                            abi: Rust,
+                                        },
+                                        decl: FnDecl {
+                                            inputs: [
+                                                Ty {
+                                                    hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).37),
+                                                    span: src/main.rs:10:20: 10:27 (#0),
+                                                    kind: Ref(
+                                                        Lifetime {
+                                                            hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).34),
+                                                            ident: '_#0,
+                                                            kind: Param(
+                                                                DefId(0:5 ~ main[0172]::time_pass::'_),
+                                                            ),
+                                                            source: Reference,
+                                                            syntax: Hidden,
+                                                        },
+                                                        MutTy {
+                                                            ty: Ty {
+                                                                hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).35),
+                                                                span: src/main.rs:10:21: 10:27 (#0),
+                                                                kind: Path(
+                                                                    Resolved(
+                                                                        None,
+                                                                        Path {
+                                                                            span: src/main.rs:10:21: 10:27 (#0),
+                                                                            res: Def(
+                                                                                Struct,
+                                                                                DefId(3:8787 ~ alloc[1945]::string::String),
+                                                                            ),
+                                                                            segments: [
+                                                                                PathSegment {
+                                                                                    ident: String#0,
+                                                                                    hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).36),
+                                                                                    res: Def(
+                                                                                        Struct,
+                                                                                        DefId(3:8787 ~ alloc[1945]::string::String),
+                                                                                    ),
+                                                                                    args: None,
+                                                                                    infer_args: false,
+                                                                                },
+                                                                            ],
+                                                                        },
+                                                                    ),
+                                                                ),
+                                                            },
+                                                            mutbl: Not,
+                                                        },
+                                                    ),
+                                                },
+                                            ],
+                                            output: DefaultReturn(
+                                                src/main.rs:10:28: 10:28 (#0),
+                                            ),
+                                            c_variadic: false,
+                                            implicit_self: None,
+                                            lifetime_elision_allowed: true,
+                                        },
+                                        span: src/main.rs:10:1: 10:28 (#0),
+                                    },
+                                    generics: Generics {
+                                        params: [
+                                            GenericParam {
+                                                hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).33),
+                                                def_id: DefId(0:5 ~ main[0172]::time_pass::'_),
+                                                name: Fresh,
+                                                span: src/main.rs:10:20: 10:21 (#0),
+                                                pure_wrt_drop: false,
+                                                kind: Lifetime {
+                                                    kind: Elided(
+                                                        Ampersand,
+                                                    ),
+                                                },
+                                                colon_span: None,
+                                                source: Generics,
+                                            },
+                                        ],
+                                        predicates: [],
+                                        has_where_clause_predicates: false,
+                                        where_clause_span: src/main.rs:10:28: 10:28 (#0),
+                                        span: src/main.rs:10:13: 10:13 (#0),
+                                    },
+                                    body: BodyId {
+                                        hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).32),
+                                    },
+                                    has_body: true,
+                                },
+                                span: src/main.rs:10:1: 12:2 (#0),
+                                vis_span: src/main.rs:10:1: 10:1 (#0),
+                            },
+                        ),
+                    },
+                    parents: [
+                        (0, 4294967040),
+                        (1, 0),
+                        (2, 1),
+                        (3, 32),
+                        (4, 31),
+                        (5, 4),
+                        (6, 30),
+                        (7, 6),
+                        (8, 7),
+                        (9, 7),
+                        (10, 7),
+                        (11, 6),
+                        (12, 14),
+                        (13, 14),
+                        (14, 15),
+                        (15, 11),
+                        (16, 18),
+                        (17, 16),
+                        (18, 23),
+                        (19, 20),
+                        (20, 22),
+                        (21, 22),
+                        (22, 23),
+                        (23, 24),
+                        (24, 25),
+                        (25, 11),
+                        (26, 27),
+                        (27, 29),
+                        (28, 29),
+                        (29, 11),
+                        (30, 5),
+                        (31, 3),
+                        (32, 0),
+                        (33, 0),
+                        (34, 37),
+                        (35, 37),
+                        (36, 35),
+                        (37, 0),
+                    ],
+                    bodies: {
+                        32: Body {
+                            params: [
+                                Param {
+                                    hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).1),
+                                    pat: Pat {
+                                        hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).2),
+                                        kind: Binding(
+                                            BindingMode(
+                                                No,
+                                                Not,
+                                            ),
+                                            HirId(DefId(0:4 ~ main[0172]::time_pass).2),
+                                            pass#0,
+                                            None,
+                                        ),
+                                        span: src/main.rs:10:14: 10:18 (#0),
+                                        default_binding_modes: true,
+                                    },
+                                    ty_span: src/main.rs:10:20: 10:27 (#0),
+                                    span: src/main.rs:10:14: 10:27 (#0),
+                                },
+                            ],
+                            value: Expr {
+                                hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).32),
+                                kind: Block(
+                                    Block {
+                                        stmts: [
+                                            Stmt {
+                                                hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).31),
+                                                kind: Semi(
+                                                    Expr {
+                                                        hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).4),
+                                                        kind: Block(
+                                                            Block {
+                                                                stmts: [
+                                                                    Stmt {
+                                                                        hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).30),
+                                                                        kind: Semi(
+                                                                            Expr {
+                                                                                hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).6),
+                                                                                kind: Call(
+                                                                                    Expr {
+                                                                                        hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).7),
+                                                                                        kind: Path(
+                                                                                            Resolved(
+                                                                                                None,
+                                                                                                Path {
+                                                                                                    span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:9: 143:27 (#8),
+                                                                                                    res: Def(
+                                                                                                        Fn,
+                                                                                                        DefId(1:3773 ~ std[6ddd]::io::stdio::_print),
+                                                                                                    ),
+                                                                                                    segments: [
+                                                                                                        PathSegment {
+                                                                                                            ident: $crate#8,
+                                                                                                            hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).8),
+                                                                                                            res: Def(
+                                                                                                                Mod,
+                                                                                                                DefId(1:0 ~ std[6ddd]),
+                                                                                                            ),
+                                                                                                            args: None,
+                                                                                                            infer_args: true,
+                                                                                                        },
+                                                                                                        PathSegment {
+                                                                                                            ident: io#8,
+                                                                                                            hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).9),
+                                                                                                            res: Def(
+                                                                                                                Mod,
+                                                                                                                DefId(1:2703 ~ std[6ddd]::io),
+                                                                                                            ),
+                                                                                                            args: None,
+                                                                                                            infer_args: true,
+                                                                                                        },
+                                                                                                        PathSegment {
+                                                                                                            ident: _print#8,
+                                                                                                            hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).10),
+                                                                                                            res: Def(
+                                                                                                                Fn,
+                                                                                                                DefId(1:3773 ~ std[6ddd]::io::stdio::_print),
+                                                                                                            ),
+                                                                                                            args: None,
+                                                                                                            infer_args: true,
+                                                                                                        },
+                                                                                                    ],
+                                                                                                },
+                                                                                            ),
+                                                                                        ),
+                                                                                        span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:9: 143:27 (#8),
+                                                                                    },
+                                                                                    [
+                                                                                        Expr {
+                                                                                            hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).11),
+                                                                                            kind: Call(
+                                                                                                Expr {
+                                                                                                    hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).29),
+                                                                                                    kind: Path(
+                                                                                                        TypeRelative(
+                                                                                                            Ty {
+                                                                                                                hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).27),
+                                                                                                                span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:28: 143:61 (#9),
+                                                                                                                kind: Path(
+                                                                                                                    Resolved(
+                                                                                                                        None,
+                                                                                                                        Path {
+                                                                                                                            span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:28: 143:61 (#9),
+                                                                                                                            res: Def(
+                                                                                                                                Struct,
+                                                                                                                                DefId(2:41020 ~ core[6c56]::fmt::Arguments),
+                                                                                                                            ),
+                                                                                                                            segments: [
+                                                                                                                                PathSegment {
+                                                                                                                                    ident: format_arguments#9,
+                                                                                                                                    hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).26),
+                                                                                                                                    res: Def(
+                                                                                                                                        Struct,
+                                                                                                                                        DefId(2:41020 ~ core[6c56]::fmt::Arguments),
+                                                                                                                                    ),
+                                                                                                                                    args: None,
+                                                                                                                                    infer_args: true,
+                                                                                                                                },
+                                                                                                                            ],
+                                                                                                                        },
+                                                                                                                    ),
+                                                                                                                ),
+                                                                                                            },
+                                                                                                            PathSegment {
+                                                                                                                ident: new_v1#9,
+                                                                                                                hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).28),
+                                                                                                                res: Err,
+                                                                                                                args: None,
+                                                                                                                infer_args: true,
+                                                                                                            },
+                                                                                                        ),
+                                                                                                    ),
+                                                                                                    span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:28: 143:61 (#9),
+                                                                                                },
+                                                                                                [
+                                                                                                    Expr {
+                                                                                                        hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).15),
+                                                                                                        kind: AddrOf(
+                                                                                                            Ref,
+                                                                                                            Not,
+                                                                                                            Expr {
+                                                                                                                hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).14),
+                                                                                                                kind: Array(
+                                                                                                                    [
+                                                                                                                        Expr {
+                                                                                                                            hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).12),
+                                                                                                                            kind: Lit(
+                                                                                                                                Spanned {
+                                                                                                                                    node: Str(
+                                                                                                                                        "Time passing with this guy: ",
+                                                                                                                                        Cooked,
+                                                                                                                                    ),
+                                                                                                                                    span: src/main.rs:11:14: 11:46 (#0),
+                                                                                                                                },
+                                                                                                                            ),
+                                                                                                                            span: src/main.rs:11:14: 11:46 (#0),
+                                                                                                                        },
+                                                                                                                        Expr {
+                                                                                                                            hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).13),
+                                                                                                                            kind: Lit(
+                                                                                                                                Spanned {
+                                                                                                                                    node: Str(
+                                                                                                                                        "\n",
+                                                                                                                                        Cooked,
+                                                                                                                                    ),
+                                                                                                                                    span: src/main.rs:11:14: 11:46 (#0),
+                                                                                                                                },
+                                                                                                                            ),
+                                                                                                                            span: src/main.rs:11:14: 11:46 (#0),
+                                                                                                                        },
+                                                                                                                    ],
+                                                                                                                ),
+                                                                                                                span: src/main.rs:11:14: 11:46 (#0),
+                                                                                                            },
+                                                                                                        ),
+                                                                                                        span: src/main.rs:11:14: 11:46 (#0),
+                                                                                                    },
+                                                                                                    Expr {
+                                                                                                        hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).25),
+                                                                                                        kind: AddrOf(
+                                                                                                            Ref,
+                                                                                                            Not,
+                                                                                                            Expr {
+                                                                                                                hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).24),
+                                                                                                                kind: Array(
+                                                                                                                    [
+                                                                                                                        Expr {
+                                                                                                                            hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).23),
+                                                                                                                            kind: Call(
+                                                                                                                                Expr {
+                                                                                                                                    hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).22),
+                                                                                                                                    kind: Path(
+                                                                                                                                        TypeRelative(
+                                                                                                                                            Ty {
+                                                                                                                                                hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).20),
+                                                                                                                                                span: src/main.rs:11:43: 11:45 (#9),
+                                                                                                                                                kind: Path(
+                                                                                                                                                    Resolved(
+                                                                                                                                                        None,
+                                                                                                                                                        Path {
+                                                                                                                                                            span: src/main.rs:11:43: 11:45 (#9),
+                                                                                                                                                            res: Def(
+                                                                                                                                                                Struct,
+                                                                                                                                                                DefId(2:40929 ~ core[6c56]::fmt::rt::Argument),
+                                                                                                                                                            ),
+                                                                                                                                                            segments: [
+                                                                                                                                                                PathSegment {
+                                                                                                                                                                    ident: format_argument#9,
+                                                                                                                                                                    hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).19),
+                                                                                                                                                                    res: Def(
+                                                                                                                                                                        Struct,
+                                                                                                                                                                        DefId(2:40929 ~ core[6c56]::fmt::rt::Argument),
+                                                                                                                                                                    ),
+                                                                                                                                                                    args: None,
+                                                                                                                                                                    infer_args: true,
+                                                                                                                                                                },
+                                                                                                                                                            ],
+                                                                                                                                                        },
+                                                                                                                                                    ),
+                                                                                                                                                ),
+                                                                                                                                            },
+                                                                                                                                            PathSegment {
+                                                                                                                                                ident: new_display#9,
+                                                                                                                                                hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).21),
+                                                                                                                                                res: Err,
+                                                                                                                                                args: None,
+                                                                                                                                                infer_args: true,
+                                                                                                                                            },
+                                                                                                                                        ),
+                                                                                                                                    ),
+                                                                                                                                    span: src/main.rs:11:43: 11:45 (#9),
+                                                                                                                                },
+                                                                                                                                [
+                                                                                                                                    Expr {
+                                                                                                                                        hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).18),
+                                                                                                                                        kind: AddrOf(
+                                                                                                                                            Ref,
+                                                                                                                                            Not,
+                                                                                                                                            Expr {
+                                                                                                                                                hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).16),
+                                                                                                                                                kind: Path(
+                                                                                                                                                    Resolved(
+                                                                                                                                                        None,
+                                                                                                                                                        Path {
+                                                                                                                                                            span: src/main.rs:11:48: 11:52 (#0),
+                                                                                                                                                            res: Local(
+                                                                                                                                                                HirId(DefId(0:4 ~ main[0172]::time_pass).2),
+                                                                                                                                                            ),
+                                                                                                                                                            segments: [
+                                                                                                                                                                PathSegment {
+                                                                                                                                                                    ident: pass#0,
+                                                                                                                                                                    hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).17),
+                                                                                                                                                                    res: Local(
+                                                                                                                                                                        HirId(DefId(0:4 ~ main[0172]::time_pass).2),
+                                                                                                                                                                    ),
+                                                                                                                                                                    args: None,
+                                                                                                                                                                    infer_args: true,
+                                                                                                                                                                },
+                                                                                                                                                            ],
+                                                                                                                                                        },
+                                                                                                                                                    ),
+                                                                                                                                                ),
+                                                                                                                                                span: src/main.rs:11:48: 11:52 (#0),
+                                                                                                                                            },
+                                                                                                                                        ),
+                                                                                                                                        span: src/main.rs:11:48: 11:52 (#9),
+                                                                                                                                    },
+                                                                                                                                ],
+                                                                                                                            ),
+                                                                                                                            span: src/main.rs:11:43: 11:45 (#9),
+                                                                                                                        },
+                                                                                                                    ],
+                                                                                                                ),
+                                                                                                                span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:28: 143:61 (#9),
+                                                                                                            },
+                                                                                                        ),
+                                                                                                        span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:28: 143:61 (#9),
+                                                                                                    },
+                                                                                                ],
+                                                                                            ),
+                                                                                            span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:28: 143:61 (#9),
+                                                                                        },
+                                                                                    ],
+                                                                                ),
+                                                                                span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:9: 143:62 (#8),
+                                                                            },
+                                                                        ),
+                                                                        span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:143:9: 143:63 (#8),
+                                                                    },
+                                                                ],
+                                                                expr: None,
+                                                                hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).5),
+                                                                rules: DefaultBlock,
+                                                                span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:142:23: 144:6 (#8),
+                                                                targeted_by_break: false,
+                                                            },
+                                                            None,
+                                                        ),
+                                                        span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:142:23: 144:6 (#8),
+                                                    },
+                                                ),
+                                                span: /Users/pranayraj/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/library/std/src/macros.rs:142:23: 144:6 (#8),
+                                            },
+                                        ],
+                                        expr: None,
+                                        hir_id: HirId(DefId(0:4 ~ main[0172]::time_pass).3),
+                                        rules: DefaultBlock,
+                                        span: src/main.rs:10:29: 12:2 (#0),
+                                        targeted_by_break: false,
+                                    },
+                                    None,
+                                ),
+                                span: src/main.rs:10:29: 12:2 (#0),
+                            },
+                        },
+                    },
+                    opt_hash_including_bodies: None,
+                },
+                parenting: UnordMap {
+                    inner: {},
+                },
+                attrs: AttributeMap {
+                    map: {},
+                    define_opaque: None,
+                    opt_hash: None,
+                },
+                trait_map: UnordMap {
+                    inner: {},
+                },
+            },
+        ),
+        NonOwner(
+            HirId(DefId(0:4 ~ main[0172]::time_pass).33),
+        ),
+    ],
+    opt_hir_hash: None,
+}
